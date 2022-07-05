@@ -1,0 +1,78 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $sarala;
+    min-height: 100vh;
+    color: $primery;
+    background-color: $bg;
+}
+
+.gradient {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    background-color: #fff;
+    margin: 10px;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background: $gradient;
+    }
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 8px;
+    background-color: $stat-bg;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 8px;
+    background-color: $active-menu-bg;    
+}
+
+.content{
+    display: flex;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-grow: 1;
+    padding-right: 56px;
+}
+
+.insta-liked{
+    color: red;
+}
+.insta-like{
+    color: $default !important;
+}
